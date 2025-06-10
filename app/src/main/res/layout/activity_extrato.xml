@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ExtratoActivity">
+
+    <TextView
+        android:id="@+id/tvSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Saldo: R$ 1.234,56" />
+
+    <RadioGroup
+        android:id="@+id/rgFiltro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rbTodas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Todas"
+            android:checked="true"
+            android:layout_marginEnd="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbDebitos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Débitos"
+            android:layout_marginEnd="8dp"/>
+
+        <RadioButton
+            android:id="@+id/rbCreditos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Créditos"/>
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewTransacoes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_transacao" />
+
+    <Button
+        android:id="@+id/btnAddTransacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Transação"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair do Aplicativo"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
