@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".DashboardActivity"> <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gerenciador Financeiro"
+    android:textSize="28sp"
+    android:textStyle="bold"
+    android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnCadastroOperacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Operação"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/design_default_color_primary"
+        app:cornerRadius="8dp"/>
+
+    <Button
+        android:id="@+id/btnExtrato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Extrato"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        app:cornerRadius="8dp"/>
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair do Aplicativo"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="@android:color/darker_gray"
+        app:cornerRadius="8dp"/>
+
+</LinearLayout>
