@@ -47,9 +47,9 @@ class TransacaoAdapter(private var transacoes: List<Transacao>) :
         }
         holder.tvValorTransacao.setTextColor(ContextCompat.getColor(holder.itemView.context, colorResId))
 
-            val imageResId = when (transacao.tipo) {
-            TipoTransacao.CREDITO -> R.drawable.ic_credito
-            TipoTransacao.DEBITO -> R.drawable.ic_debito
+        val imageResId = when (transacao.tipo) {
+            com.example.finapp.data.TipoTransacao.CREDITO -> R.drawable.ic_credito
+            com.example.finapp.data.TipoTransacao.DEBITO -> R.drawable.ic_debito
         }
         holder.ivTipoTransacao.setImageResource(imageResId)
 

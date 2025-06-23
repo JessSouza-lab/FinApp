@@ -54,7 +54,5 @@
             android:textSize="18sp"
             android:textStyle="bold"
             tools:text="R$ -150,00" />
-
     </LinearLayout>
-
 </androidx.cardview.widget.CardView>
